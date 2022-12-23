@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { VideoDetails,  Feed, SearchFeed, Navbar, ChannelDetails } from './components';
+import { Box } from '@mui/material';
 
 export default function App() {
   return (

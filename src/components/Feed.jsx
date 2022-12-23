@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import { Sidebar, Videos } from './';
 import { fetchFromAPI } from '../utils/apiDataFetch';
@@ -8,8 +8,16 @@ export default function Feed() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
-    .then((data) => setVideos(data.items))
+    const controller = new AbortController();
+    const signal = controller.signal;
+
+    fetchFromAPI(`search?part=snippet,id&q=${selectedCategory}&regionCode=US`, signal).then(
+      (data) => setVideos(data.items),
+    );
+
+    return () => {
+      controller.abort();
+    };
   }, [selectedCategory]);
 
   return (
@@ -23,7 +31,7 @@ export default function Feed() {
       >
         <Sidebar
           selectedCategory={selectedCategory}
-          setSelectedCategory={useCallback(() => setSelectedCategory)}
+          setSelectedCategory={setSelectedCategory}
         />
 
         <Typography
@@ -45,9 +53,8 @@ export default function Feed() {
           {selectedCategory} <span style={{ color: '#F31503' }}>videos</span>
         </Typography>
 
-        <Videos videos={videos} />
+        <Videos videos={videos} direction='' />
       </Box>
     </Stack>
   );
 }
-
