@@ -11,9 +11,9 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Feed />} />
-          <Route path='/video/:id' element={<VideoDetails />} />
-          <Route path='/channel/:id' element={<ChannelDetails />} />
-          <Route path='/search/:searchterm' element={<SearchFeed />} />
+          <Route path='/video/:id' exact element={<VideoDetails />} />
+          <Route path='/channel/:id' exact element={<ChannelDetails />} />
+          <Route path='/search/:searchterm' exact element={<SearchFeed />} />
         </Routes>
       </Box>
     </BrowserRouter>

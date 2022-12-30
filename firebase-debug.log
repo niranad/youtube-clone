@@ -1,0 +1,160 @@
+[debug] [2022-12-23T20:39:08.416Z] ----------------------------------------------------------------------
+[debug] [2022-12-23T20:39:08.422Z] Command:       /home/niranad/.nvm/versions/node/v16.17.1/bin/node /home/niranad/.nvm/versions/node/v16.17.1/bin/firebase deploy
+[debug] [2022-12-23T20:39:08.424Z] CLI Version:   11.17.0
+[debug] [2022-12-23T20:39:08.424Z] Platform:      linux
+[debug] [2022-12-23T20:39:08.425Z] Node Version:  v16.17.1
+[debug] [2022-12-23T20:39:08.427Z] Time:          Fri Dec 23 2022 21:39:08 GMT+0100 (West Africa Standard Time)
+[debug] [2022-12-23T20:39:08.428Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-23T20:39:08.814Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-23T20:39:08.816Z] > authorizing via signed-in user (adesite67@gmail.com)
+[debug] [2022-12-23T20:39:08.817Z] [iam] checking project utube-93855 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-23T20:39:08.824Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/utube-93855:testIamPermissions [none]
+[debug] [2022-12-23T20:39:08.825Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/utube-93855:testIamPermissions x-goog-quota-user=projects/utube-93855
+[debug] [2022-12-23T20:39:08.826Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/utube-93855:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-23T20:39:16.394Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/utube-93855:testIamPermissions 200
+[debug] [2022-12-23T20:39:16.395Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/utube-93855:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-23T20:39:16.398Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/utube-93855 [none]
+[debug] [2022-12-23T20:39:33.099Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/utube-93855
+[debug] [2022-12-23T20:39:38.132Z] Error: Timed out.
+    at Timeout._onTimeout (/home/niranad/.nvm/versions/node/v16.17.1/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-12-23T20:57:41.674Z] ----------------------------------------------------------------------
+[debug] [2022-12-23T20:57:41.681Z] Command:       /home/niranad/.nvm/versions/node/v16.17.1/bin/node /home/niranad/.nvm/versions/node/v16.17.1/bin/firebase deploy
+[debug] [2022-12-23T20:57:41.684Z] CLI Version:   11.17.0
+[debug] [2022-12-23T20:57:41.684Z] Platform:      linux
+[debug] [2022-12-23T20:57:41.684Z] Node Version:  v16.17.1
+[debug] [2022-12-23T20:57:41.688Z] Time:          Fri Dec 23 2022 21:57:41 GMT+0100 (West Africa Standard Time)
+[debug] [2022-12-23T20:57:41.689Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-23T20:57:42.131Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-23T20:57:42.133Z] > authorizing via signed-in user (adesite67@gmail.com)
+[debug] [2022-12-23T20:57:42.134Z] [iam] checking project utube-93855 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-23T20:57:42.144Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/utube-93855:testIamPermissions [none]
+[debug] [2022-12-23T20:57:42.146Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/utube-93855:testIamPermissions x-goog-quota-user=projects/utube-93855
+[debug] [2022-12-23T20:57:42.147Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/utube-93855:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-23T20:57:53.902Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/utube-93855:testIamPermissions 200
+[debug] [2022-12-23T20:57:53.904Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/utube-93855:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-23T20:57:53.909Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/utube-93855 [none]
+[debug] [2022-12-23T20:58:02.003Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/utube-93855 200
+[debug] [2022-12-23T20:58:02.005Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/utube-93855 {"projectId":"utube-93855","projectNumber":"661218245370","displayName":"utube","name":"projects/utube-93855","resources":{"hostingSite":"utube-93855"},"state":"ACTIVE","etag":"1_355ab839-d8c1-40c4-b99c-dcf6a374ae26"}
+[info] 
+[info] === Deploying to 'utube-93855'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-12-23T20:58:02.038Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/versions [none]
+[debug] [2022-12-23T20:58:02.039Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-12-23T20:58:44.371Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/versions 200
+[debug] [2022-12-23T20:58:44.372Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/versions {"name":"projects/661218245370/sites/utube-93855/versions/535c75a4afc27a93","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[utube-93855]: beginning deploy... 
+[info] i  hosting[utube-93855]: found 10 files in build 
+[debug] [2022-12-23T20:58:53.556Z] [hosting] uploading with 200 concurrency
+[debug] [2022-12-23T20:58:53.561Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2022-12-23T20:58:54.153Z] [hosting] hash cache [YnVpbGQ] stored for 10 files
+[debug] [2022-12-23T20:58:54.155Z] [hosting][hash queue][FINAL] {"max":548,"min":102,"avg":158,"active":0,"complete":10,"success":10,"errored":0,"retried":0,"total":10,"elapsed":583}
+[debug] [2022-12-23T20:58:54.156Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/661218245370/sites/utube-93855/versions/535c75a4afc27a93:populateFiles [none]
+[debug] [2022-12-23T20:58:54.157Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/661218245370/sites/utube-93855/versions/535c75a4afc27a93:populateFiles {"files":{"/404.html":"7c5c18787f0d72901da786ce7dcf893c6a0a74da69b3084e1a08695eac0b87a3","/asset-manifest.json":"c3d1687d47e4aacff88b1e62237e1ac42ca7d57ef37d79bace2a1f3b9460b619","/manifest.json":"c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0","/robots.txt":"2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec","/static/css/main.7fa7225e.css":"daff56b7f6de26d30b194c0616f2a931b76c820817fe2c8c390b90609c1b2a11","/static/js/main.35799c66.js.LICENSE.txt":"e6045e245b8c7520bee904f3f9be6401e769b28ec4604b5715249e10277a0e08","/static/css/main.7fa7225e.css.map":"436039137737e4e7d2c4665a56996c9a697e7ad4a92496e3d02037f2635c567e","/index.html":"1701243db6532191905d9f29e2d698de1845af8d24c77bf7e0fd0dbf0922ee73","/static/js/main.35799c66.js":"967f65c73b2f6ddb8b55c925a5b4fe8841337b8e7a3bfe59ea9109944724985e","/static/js/main.35799c66.js.map":"42cf66a508583f45561413001f94e90203b70786dc04c4434f5edfdc9f909d21"}}
+[debug] [2022-12-23T20:58:57.837Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/661218245370/sites/utube-93855/versions/535c75a4afc27a93:populateFiles 200
+[debug] [2022-12-23T20:58:57.838Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/661218245370/sites/utube-93855/versions/535c75a4afc27a93:populateFiles {"uploadRequiredHashes":["c3d1687d47e4aacff88b1e62237e1ac42ca7d57ef37d79bace2a1f3b9460b619","1701243db6532191905d9f29e2d698de1845af8d24c77bf7e0fd0dbf0922ee73","2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec","436039137737e4e7d2c4665a56996c9a697e7ad4a92496e3d02037f2635c567e","967f65c73b2f6ddb8b55c925a5b4fe8841337b8e7a3bfe59ea9109944724985e","42cf66a508583f45561413001f94e90203b70786dc04c4434f5edfdc9f909d21","7c5c18787f0d72901da786ce7dcf893c6a0a74da69b3084e1a08695eac0b87a3","daff56b7f6de26d30b194c0616f2a931b76c820817fe2c8c390b90609c1b2a11","c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0","e6045e245b8c7520bee904f3f9be6401e769b28ec4604b5715249e10277a0e08"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files"}
+[debug] [2022-12-23T20:58:57.865Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c3d1687d47e4aacff88b1e62237e1ac42ca7d57ef37d79bace2a1f3b9460b619 [none]
+[debug] [2022-12-23T20:58:57.866Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c3d1687d47e4aacff88b1e62237e1ac42ca7d57ef37d79bace2a1f3b9460b619 [stream]
+[debug] [2022-12-23T20:58:57.872Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/1701243db6532191905d9f29e2d698de1845af8d24c77bf7e0fd0dbf0922ee73 [none]
+[debug] [2022-12-23T20:58:57.872Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/1701243db6532191905d9f29e2d698de1845af8d24c77bf7e0fd0dbf0922ee73 [stream]
+[debug] [2022-12-23T20:58:57.878Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec [none]
+[debug] [2022-12-23T20:58:57.879Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec [stream]
+[debug] [2022-12-23T20:58:57.883Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/436039137737e4e7d2c4665a56996c9a697e7ad4a92496e3d02037f2635c567e [none]
+[debug] [2022-12-23T20:58:57.884Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/436039137737e4e7d2c4665a56996c9a697e7ad4a92496e3d02037f2635c567e [stream]
+[debug] [2022-12-23T20:58:57.889Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/967f65c73b2f6ddb8b55c925a5b4fe8841337b8e7a3bfe59ea9109944724985e [none]
+[debug] [2022-12-23T20:58:57.890Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/967f65c73b2f6ddb8b55c925a5b4fe8841337b8e7a3bfe59ea9109944724985e [stream]
+[debug] [2022-12-23T20:58:57.896Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/42cf66a508583f45561413001f94e90203b70786dc04c4434f5edfdc9f909d21 [none]
+[debug] [2022-12-23T20:58:57.898Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/42cf66a508583f45561413001f94e90203b70786dc04c4434f5edfdc9f909d21 [stream]
+[debug] [2022-12-23T20:58:57.907Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/7c5c18787f0d72901da786ce7dcf893c6a0a74da69b3084e1a08695eac0b87a3 [none]
+[debug] [2022-12-23T20:58:57.908Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/7c5c18787f0d72901da786ce7dcf893c6a0a74da69b3084e1a08695eac0b87a3 [stream]
+[debug] [2022-12-23T20:58:57.916Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/daff56b7f6de26d30b194c0616f2a931b76c820817fe2c8c390b90609c1b2a11 [none]
+[debug] [2022-12-23T20:58:57.917Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/daff56b7f6de26d30b194c0616f2a931b76c820817fe2c8c390b90609c1b2a11 [stream]
+[debug] [2022-12-23T20:58:57.924Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0 [none]
+[debug] [2022-12-23T20:58:57.925Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0 [stream]
+[debug] [2022-12-23T20:58:57.931Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/e6045e245b8c7520bee904f3f9be6401e769b28ec4604b5715249e10277a0e08 [none]
+[debug] [2022-12-23T20:58:57.931Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/e6045e245b8c7520bee904f3f9be6401e769b28ec4604b5715249e10277a0e08 [stream]
+[debug] [2022-12-23T20:58:57.936Z] [hosting][populate queue][FINAL] {"max":3721,"min":3721,"avg":3721,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":3794}
+[debug] [2022-12-23T20:58:57.937Z] [hosting] uploads queued: 10
+[debug] [2022-12-23T20:59:08.165Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/7c5c18787f0d72901da786ce7dcf893c6a0a74da69b3084e1a08695eac0b87a3 200
+[debug] [2022-12-23T20:59:08.166Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/7c5c18787f0d72901da786ce7dcf893c6a0a74da69b3084e1a08695eac0b87a3 [stream]
+[debug] [2022-12-23T20:59:08.488Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/436039137737e4e7d2c4665a56996c9a697e7ad4a92496e3d02037f2635c567e 200
+[debug] [2022-12-23T20:59:08.489Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/436039137737e4e7d2c4665a56996c9a697e7ad4a92496e3d02037f2635c567e [stream]
+[debug] [2022-12-23T20:59:09.253Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/daff56b7f6de26d30b194c0616f2a931b76c820817fe2c8c390b90609c1b2a11 200
+[debug] [2022-12-23T20:59:09.254Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/daff56b7f6de26d30b194c0616f2a931b76c820817fe2c8c390b90609c1b2a11 [stream]
+[debug] [2022-12-23T20:59:09.334Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c3d1687d47e4aacff88b1e62237e1ac42ca7d57ef37d79bace2a1f3b9460b619 200
+[debug] [2022-12-23T20:59:09.335Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c3d1687d47e4aacff88b1e62237e1ac42ca7d57ef37d79bace2a1f3b9460b619 [stream]
+[debug] [2022-12-23T20:59:09.380Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/1701243db6532191905d9f29e2d698de1845af8d24c77bf7e0fd0dbf0922ee73 200
+[debug] [2022-12-23T20:59:09.382Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/1701243db6532191905d9f29e2d698de1845af8d24c77bf7e0fd0dbf0922ee73 [stream]
+[debug] [2022-12-23T20:59:09.388Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec 200
+[debug] [2022-12-23T20:59:09.389Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec [stream]
+[debug] [2022-12-23T20:59:09.633Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/e6045e245b8c7520bee904f3f9be6401e769b28ec4604b5715249e10277a0e08 200
+[debug] [2022-12-23T20:59:09.634Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/e6045e245b8c7520bee904f3f9be6401e769b28ec4604b5715249e10277a0e08 [stream]
+[debug] [2022-12-23T20:59:11.347Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/967f65c73b2f6ddb8b55c925a5b4fe8841337b8e7a3bfe59ea9109944724985e 200
+[debug] [2022-12-23T20:59:11.348Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/967f65c73b2f6ddb8b55c925a5b4fe8841337b8e7a3bfe59ea9109944724985e [stream]
+[debug] [2022-12-23T20:59:15.036Z] [uploadQueue] Retrying task c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0
+[debug] [2022-12-23T20:59:15.041Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0 [none]
+[debug] [2022-12-23T20:59:15.041Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0 [stream]
+[debug] [2022-12-23T20:59:32.120Z] [uploadQueue] Retrying task 42cf66a508583f45561413001f94e90203b70786dc04c4434f5edfdc9f909d21
+[debug] [2022-12-23T20:59:32.122Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/42cf66a508583f45561413001f94e90203b70786dc04c4434f5edfdc9f909d21 [none]
+[debug] [2022-12-23T20:59:32.122Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/42cf66a508583f45561413001f94e90203b70786dc04c4434f5edfdc9f909d21 [stream]
+[debug] [2022-12-23T20:59:40.633Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/42cf66a508583f45561413001f94e90203b70786dc04c4434f5edfdc9f909d21 200
+[debug] [2022-12-23T20:59:40.634Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/42cf66a508583f45561413001f94e90203b70786dc04c4434f5edfdc9f909d21 [stream]
+[debug] [2022-12-23T20:59:42.093Z] [uploadQueue] Retrying task c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0
+[debug] [2022-12-23T20:59:42.096Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0 [none]
+[debug] [2022-12-23T20:59:42.097Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0 [stream]
+[debug] [2022-12-23T20:59:48.877Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0 200
+[debug] [2022-12-23T20:59:48.878Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/utube-93855/versions/535c75a4afc27a93/files/c0de7c8a11d4d122268d97b5ab6246564859790310f836fcd298382fd857d4d0 [stream]
+[debug] [2022-12-23T20:59:48.879Z] [hosting][upload queue][FINAL] {"max":13496,"min":6784,"avg":10749,"active":0,"complete":10,"success":10,"errored":0,"retried":3,"total":10,"elapsed":51039}
+[info] ✔  hosting[utube-93855]: file upload complete 
+[debug] [2022-12-23T20:59:48.889Z] [hosting] deploy completed after 55383ms
+[debug] [2022-12-23T20:59:48.911Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "./index.html"
+        }
+      ],
+      "site": "utube-93855"
+    },
+    "version": "projects/661218245370/sites/utube-93855/versions/535c75a4afc27a93"
+  }
+]
+[info] i  hosting[utube-93855]: finalizing version... 
+[debug] [2022-12-23T20:59:48.931Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/versions/535c75a4afc27a93 updateMask=status%2Cconfig
+[debug] [2022-12-23T20:59:48.932Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/versions/535c75a4afc27a93 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"./index.html"}]}}
+[debug] [2022-12-23T20:59:58.333Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/versions/535c75a4afc27a93 200
+[debug] [2022-12-23T20:59:58.334Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/versions/535c75a4afc27a93 {"name":"projects/661218245370/sites/utube-93855/versions/535c75a4afc27a93","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"./index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-12-23T20:58:12.690934Z","createUser":{"email":"adesite67@gmail.com"},"finalizeTime":"2022-12-23T20:59:58.064449Z","finalizeUser":{"email":"adesite67@gmail.com"}}
+[debug] [2022-12-23T20:59:58.334Z] [hosting] finalized version for utube-93855:[object Object]
+[info] ✔  hosting[utube-93855]: version finalized 
+[info] i  hosting[utube-93855]: releasing new version... 
+[debug] [2022-12-23T20:59:58.341Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/channels/live/releases versionName=projects%2F661218245370%2Fsites%2Futube-93855%2Fversions%2F535c75a4afc27a93
+[debug] [2022-12-23T20:59:58.342Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/channels/live/releases {}
+[debug] [2022-12-23T21:00:01.396Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/channels/live/releases 200
+[debug] [2022-12-23T21:00:01.396Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/utube-93855/channels/live/releases {"name":"projects/661218245370/sites/utube-93855/channels/live/releases/1671829200424998","version":{"name":"projects/661218245370/sites/utube-93855/versions/535c75a4afc27a93","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"./index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-12-23T20:58:12.690934Z","createUser":{"email":"adesite67@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp6a4GQnndnFFRPdyh8fOKry5qSI4qsXEHImTqUQ=mo"},"finalizeTime":"2022-12-23T20:59:58.064449Z","finalizeUser":{"email":"adesite67@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp6a4GQnndnFFRPdyh8fOKry5qSI4qsXEHImTqUQ=mo"}},"type":"DEPLOY","releaseTime":"2022-12-23T21:00:00.424998438Z","releaseUser":{"email":"adesite67@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp6a4GQnndnFFRPdyh8fOKry5qSI4qsXEHImTqUQ=mo"}}
+[debug] [2022-12-23T21:00:01.397Z] [hosting] release: {"name":"projects/661218245370/sites/utube-93855/channels/live/releases/1671829200424998","version":{"name":"projects/661218245370/sites/utube-93855/versions/535c75a4afc27a93","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"./index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-12-23T20:58:12.690934Z","createUser":{"email":"adesite67@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp6a4GQnndnFFRPdyh8fOKry5qSI4qsXEHImTqUQ=mo"},"finalizeTime":"2022-12-23T20:59:58.064449Z","finalizeUser":{"email":"adesite67@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp6a4GQnndnFFRPdyh8fOKry5qSI4qsXEHImTqUQ=mo"}},"type":"DEPLOY","releaseTime":"2022-12-23T21:00:00.424998438Z","releaseUser":{"email":"adesite67@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp6a4GQnndnFFRPdyh8fOKry5qSI4qsXEHImTqUQ=mo"}}
+[info] ✔  hosting[utube-93855]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/utube-93855/overview
+[info] Hosting URL: https://utube-93855.web.app
+[debug] [2022-12-23T21:00:11.667Z] Error: Timed out.
+    at Timeout._onTimeout (/home/niranad/.nvm/versions/node/v16.17.1/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.

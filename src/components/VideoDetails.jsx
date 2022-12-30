@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player';
 import { Typography, Box, Stack, Skeleton } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 
-import { VideoDetailsSkeleton, Videos } from './';
+import { Videos } from './';
 import { fetchFromAPI } from '../utils/apiDataFetch';
 
 export default function VideoDetails() {
@@ -59,7 +59,7 @@ export default function VideoDetails() {
               {videoDetails?.snippet?.title ? (
                 videoDetails.snippet.title
               ) : (
-                <Skeleton />
+                <Skeleton sx={{ backgroundColor: 'lightgray' }} />
               )}
             </Typography>
             <Stack
@@ -86,7 +86,7 @@ export default function VideoDetails() {
                       <CheckCircle sx={{ fonSize: 12, color: 'gray', ml: 5 }} />
                     </>
                   ) : (
-                    <Skeleton />
+                    <Skeleton width='2.5rem' sx={{ backgroundColor: 'lightgray' }} />
                   )}
                 </Typography>
               </Link>
@@ -95,14 +95,20 @@ export default function VideoDetails() {
                   {videoDetails?.statistics?.viewCount ? (
                     formatCount(videoDetails.statistics.viewCount) + ' views'
                   ) : (
-                    <Skeleton />
+                    <Skeleton
+                      width='1rem'
+                      sx={{ backgroundColor: 'lightgray' }}
+                    />
                   )}
                 </Typography>
                 <Typography variant='body1' sx={{ opacity: 0.7 }}>
                   {videoDetails?.statistics?.likeCount ? (
                     formatCount(videoDetails.statistics.likeCount) + ' likes'
                   ) : (
-                    <Skeleton />
+                    <Skeleton
+                      width='1rem'
+                      sx={{ backgroundColor: 'lightgray' }}
+                    />
                   )}
                 </Typography>
               </Stack>

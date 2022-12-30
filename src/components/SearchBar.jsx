@@ -10,19 +10,25 @@ export default function SearchBar() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (searchTerm) {
+    if (searchTerm?.length) {
       navigate(`/search/${searchTerm}`);
       setSearchTerm('');
     }
-  }
+  };
 
   return (
     <Paper
       component='form'
       onSubmit={handleSubmit}
-      sx={{ borderRadius: 20, border: '1pxsolid #e3e3e3', pl: 2, boxShadow: 'none', mr: { sm: 5 }}}
+      sx={{
+        borderRadius: 20,
+        border: '1pxsolid #e3e3e3',
+        pl: 2,
+        boxShadow: 'none',
+        mr: { sm: 5 },
+      }}
     >
-      <input 
+      <input
         className='search-bar'
         placeholder='Search...'
         value={searchTerm}
@@ -32,5 +38,5 @@ export default function SearchBar() {
         <Search />
       </IconButton>
     </Paper>
-  )
+  );
 }

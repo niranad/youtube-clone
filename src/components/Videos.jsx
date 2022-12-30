@@ -19,14 +19,51 @@ export default function Videos({ videos, direction }) {
             </Box>
           ))
         : skeletonData.map((item, idx) => (
-            <Box key={idx}>
-              <Skeleton variant='rectangular' width={300} height={300} />
+            <Box
+              key={idx}
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.4rem',
+                width: 300,
+                height: 300,
+              }}
+            >
+              <Skeleton
+                variant='rectangular'
+                width='100%'
+                height='65%'
+                sx={{
+                  backgroundColor: 'lightgray',
+                }}
+              />
+              <Skeleton
+                variant='text'
+                width='85%'
+                sx={{
+                  fontSize: '1.3rem',
+                  backgroundColor: 'rgba(230, 230, 255, 0.9)',
+                }}
+              />
+              <Skeleton
+                variant='text'
+                width='65%'
+                sx={{
+                  fontSize: '1.3rem',
+                  backgroundColor: 'rgba(230, 230, 255, 0.9)',
+                }}
+              />
+              <Skeleton
+                variant='text'
+                width='40%'
+                sx={{
+                  fontSize: '1rem',
+                  backgroundColor: 'rgba(230, 230, 255, 0.9)',
+                }}
+              />
             </Box>
           ))}
     </Stack>
   );
 }
-
-
-
 

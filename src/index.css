@@ -8,20 +8,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  background-color: #000;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-  height: 5px;
+  width: 0.8rem; 
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: rgb(114, 113, 113);
   border-radius: 10px;
-  height: 200px;
 }
 
 ::-webkit-scrollbar-track {

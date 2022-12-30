@@ -14,7 +14,6 @@ export default function ChannelDetails() {
     const controller = new AbortController();
     const signal = controller.signal;
     
-
     fetchFromAPI(`channels?part=snippet&id=${id}`, signal).then((data) =>
       setChannelDetail(data?.items[0]),
     );
